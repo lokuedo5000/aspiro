@@ -1,5 +1,6 @@
 class Aspiro {
   constructor(options = {}) {
+    this.storageKey = options.storageKey || 'aspiro-used-phrases';
     this.folder = options.folder || "/aspiro/phrases";
     this.ext = options.ext || ".json";
     this.phrases = [];
